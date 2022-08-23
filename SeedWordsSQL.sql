@@ -1,5 +1,5 @@
 INSERT INTO adjective (adjective) VALUES ('charming'), ('fantastic'), ('small'), ('large');
-INSERT INTO bird (bird) VALUES ('parakeet'), ('robin'), ('blue jay'), ('eagle');
+INSERT INTO animal (animal) VALUES ('parakeet'), ('snake'), ('bear'), ('pike');
 INSERT INTO bodypart (bodyPart) VALUES ('arm'), ('leg'), ('finger'), ('toe');
 INSERT INTO food (food) VALUES ('pizza'), ('pasta'), ('cookies'), ('chips');
 INSERT INTO liquid (liquid) VALUES ('water'), ('soda'), ('tea'), ('pee');
@@ -12,3 +12,12 @@ INSERT INTO shape (shape) VALUES ('square'), ('diamond'), ('circle'), ('triangle
 INSERT INTO verb (verb) VALUES ('run'), ('dance'), ('jump'), ('ride');
 INSERT INTO verbing (verbING) VALUES ('running'), ('dancing'), ('jumping'), ('riding');
 INSERT INTO verbpast (verbPast) VALUES ('ran'), ('danced'), ('jumped'), ('rode');
+INSERT INTO holiday (holiday) VALUES ('Christmas'), ('Halloween'), ('Easter'), ('Thanksgiving');
+INSERT INTO place (place) VALUES ('house'), ('store'), ('mall'), ('school');
+INSERT INTO girlname (girlName) VALUES ('Lily'), ('Melissa'), ('Jane'), ('Robin');
+INSERT INTO boyname (boyName) VALUES ('Bob'), ('Bill'), ('George'), ('Jackson');
+INSERT INTO color (color) VALUES ('blue'), ('black'), ('pink'), ('green');
+INSERT INTO emotion (emotion)VALUES ('happy'), ('sad'), ('excited'), ('hopefull');
+INSERT INTO sound (sound) VALUES ('bells'), ('whistle'), ('crying'), ('laughing');
+INSERT INTO genre (genre) VALUES ('rock'), ('action'), ('country'), ('romance');
+INSERT INTO instrument (instrument) VALUES ('drums'), ('cello'), ('trumpet'), ('flute');

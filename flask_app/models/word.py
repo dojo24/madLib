@@ -240,24 +240,24 @@ class Room:
         query = 'INSERT INTO room (roomInHouse) VALUE %(roomInHouse)s;'
         return connectToMySQL(cls.db).query_db(query, data)
 
-class Bird:
+class Animal:
     db = 'madLib'
     def __init__(self, data):
         self.id = data['id']
-        self.bird = data['bird']
+        self.animal = data['animal']
 
     @classmethod
     def getAll(cls):
-        query = 'SELECT * FROM bird;'
+        query = 'SELECT * FROM animal;'
         results = connectToMySQL(cls.db).query_db(query)
-        birds = []
+        animals = []
         for row in results:
-            birds.append(cls(row))
-        return birds
+            animals.append(cls(row))
+        return animals
 
     @classmethod
     def save(cls, data):
-        query = 'INSERT INTO bird (bird) VALUE %(bird)s;'
+        query = 'INSERT INTO animal (animal) VALUE %(animal)s;'
         return connectToMySQL(cls.db).query_db(query, data)
 
 class Bodypart:
@@ -278,4 +278,184 @@ class Bodypart:
     @classmethod
     def save(cls, data):
         query = 'INSERT INTO bodypart (bodyPart) VALUE %(bodyPart)s;'
+        return connectToMySQL(cls.db).query_db(query, data)
+
+class Holiday:
+    db = 'madLib'
+    def __init__(self, data):
+        self.id = data['id']
+        self.holiday = data['holiday']
+
+    @classmethod
+    def getAll(cls):
+        query = 'SELECT * FROM holiday;'
+        results = connectToMySQL(cls.db).query_db(query)
+        holidays = []
+        for row in results:
+            holidays.append(cls(row))
+        return holidays
+
+    @classmethod
+    def save(cls, data):
+        query = 'INSERT INTO holiday (holiday) VALUE %(holiday)s;'
+        return connectToMySQL(cls.db).query_db(query, data)
+
+class Place:
+    db = 'madLib'
+    def __init__(self, data):
+        self.id = data['id']
+        self.place = data['place']
+
+    @classmethod
+    def getAll(cls):
+        query = 'SELECT * FROM place;'
+        results = connectToMySQL(cls.db).query_db(query)
+        places = []
+        for row in results:
+            places.append(cls(row))
+        return places
+
+    @classmethod
+    def save(cls, data):
+        query = 'INSERT INTO place (place) VALUE %(place)s;'
+        return connectToMySQL(cls.db).query_db(query, data)
+
+class GirlName:
+    db = 'madLib'
+    def __init__(self, data):
+        self.id = data['id']
+        self.girlName = data['girlName']
+
+    @classmethod
+    def getAll(cls):
+        query = 'SELECT * FROM girlname;'
+        results = connectToMySQL(cls.db).query_db(query)
+        girlNames = []
+        for row in results:
+            girlNames.append(cls(row))
+        return girlNames
+
+    @classmethod
+    def save(cls, data):
+        query = 'INSERT INTO girlname (girlName) VALUE %(girlName)s;'
+        return connectToMySQL(cls.db).query_db(query, data)
+
+class BoyName:
+    db = 'madLib'
+    def __init__(self, data):
+        self.id = data['id']
+        self.boyName = data['boyName']
+
+    @classmethod
+    def getAll(cls):
+        query = 'SELECT * FROM boyname;'
+        results = connectToMySQL(cls.db).query_db(query)
+        boyNames = []
+        for row in results:
+            boyNames.append(cls(row))
+        return boyNames
+
+    @classmethod
+    def save(cls, data):
+        query = 'INSERT INTO boyname (boyName) VALUE %(boyName)s;'
+        return connectToMySQL(cls.db).query_db(query, data)
+
+class Color:
+    db = 'madLib'
+    def __init__(self, data):
+        self.id = data['id']
+        self.color = data['color']
+
+    @classmethod
+    def getAll(cls):
+        query = 'SELECT * FROM color;'
+        results = connectToMySQL(cls.db).query_db(query)
+        colors = []
+        for row in results:
+            colors.append(cls(row))
+        return colors
+
+    @classmethod
+    def save(cls, data):
+        query = 'INSERT INTO color (color) VALUE %(color)s;'
+        return connectToMySQL(cls.db).query_db(query, data)
+
+class Emotion:
+    db = 'madLib'
+    def __init__(self, data):
+        self.id = data['id']
+        self.emotion = data['emotion']
+
+    @classmethod
+    def getAll(cls):
+        query = 'SELECT * FROM emotion;'
+        results = connectToMySQL(cls.db).query_db(query)
+        emotions = []
+        for row in results:
+            emotions.append(cls(row))
+        return emotions
+
+    @classmethod
+    def save(cls, data):
+        query = 'INSERT INTO emotion (emotion) VALUE %(emotion)s;'
+        return connectToMySQL(cls.db).query_db(query, data)
+
+class Sound:
+    db = 'madLib'
+    def __init__(self, data):
+        self.id = data['id']
+        self.sound = data['sound']
+
+    @classmethod
+    def getAll(cls):
+        query = 'SELECT * FROM sound;'
+        results = connectToMySQL(cls.db).query_db(query)
+        sounds = []
+        for row in results:
+            sounds.append(cls(row))
+        return sounds
+
+    @classmethod
+    def save(cls, data):
+        query = 'INSERT INTO sound (sound) VALUE %(sound)s;'
+        return connectToMySQL(cls.db).query_db(query, data)
+
+class Genre:
+    db = 'madLib'
+    def __init__(self, data):
+        self.id = data['id']
+        self.genre = data['genre']
+
+    @classmethod
+    def getAll(cls):
+        query = 'SELECT * FROM genre;'
+        results = connectToMySQL(cls.db).query_db(query)
+        genres = []
+        for row in results:
+            genres.append(cls(row))
+        return genres
+
+    @classmethod
+    def save(cls, data):
+        query = 'INSERT INTO genre (genre) VALUE %(genre)s;'
+        return connectToMySQL(cls.db).query_db(query, data)
+
+class Instrument:
+    db = 'madLib'
+    def __init__(self, data):
+        self.id = data['id']
+        self.instrument = data['instrument']
+
+    @classmethod
+    def getAll(cls):
+        query = 'SELECT * FROM instrument;'
+        results = connectToMySQL(cls.db).query_db(query)
+        instruments = []
+        for row in results:
+            instruments.append(cls(row))
+        return instruments
+
+    @classmethod
+    def save(cls, data):
+        query = 'INSERT INTO instrument (instrument) VALUE %(instrument)s;'
         return connectToMySQL(cls.db).query_db(query, data)
